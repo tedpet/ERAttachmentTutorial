@@ -1,0 +1,39 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = erAttachmentID; 
+            name = erAttachmentID; 
+            prototypeName = id; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = firstName; 
+            name = firstName; 
+            prototypeName = varchar255; 
+        }, 
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {
+            allowsNull = Y; 
+            columnName = lastName; 
+            name = lastName; 
+            prototypeName = varchar255; 
+        }
+    ); 
+    attributesUsedForLocking = (erAttachmentID, firstName, id, lastName); 
+    className = "your.app.model.Person"; 
+    classProperties = (firstName, lastName, photo); 
+    externalName = Person; 
+    fetchSpecificationDictionary = {}; 
+    name = Person; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = ERAttachment; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = erAttachmentID; }); 
+            name = photo; 
+        }
+    ); 
+}

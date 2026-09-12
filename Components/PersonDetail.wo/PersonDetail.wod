@@ -1,0 +1,19 @@
+WrapperComponent: Wrapper {
+}
+
+FirstName: WOString {
+    value = aPerson.firstName;
+}
+
+LastName: WOString {
+    value = aPerson.lastName;
+}
+
+PhotoViewer: ERAttachmentViewer {
+    configurationName = "Person.photo";
+    attachment = aPerson.photo;
+}
+
+ReturnLink: WOHyperlink {
+    action = toMain;
+}

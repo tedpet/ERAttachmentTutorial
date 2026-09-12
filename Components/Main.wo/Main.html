@@ -1,0 +1,31 @@
+<webobject name="WrapperComponent">
+    <webobject name="HasPersonsCheck">
+  <h2>Peanuts Characters!</h2>
+  <div>
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Photo</th>
+      </tr>
+      <webobject name="PersonLoop">
+        <tr>
+          <td><webobject name="FirstName"/></td>
+          <td><webobject name="LastName"/></td>
+          <td><webobject name="PhotoViewer"/></td>
+        </tr>
+      </webobject>
+    </table>
+  </div>
+</webobject>
+<webobject name="EditForm">
+  First Name:<webobject name="FirstNameField"/>
+  <br />
+  Last Name:<webobject name="LastNameField"/>
+  <br />
+  <br />
+  Photo:<webobject name="PhotoUpload"/>
+  <br />
+  <webobject name="SaveButton"/>
+</webobject>
+</webobject>

@@ -1,0 +1,46 @@
+WrapperComponent: Wrapper {
+}
+
+HasPersonsCheck: WOConditional {
+    condition = persons.count;
+}
+
+PersonLoop: WORepetition {
+    list = persons;
+    item = personItem;
+}
+
+FirstName: WOString {
+    value = personItem.firstName;
+}
+PhotoViewer: ERAttachmentViewer {
+    configurationName = "Person.photo";
+    attachment = personItem.photo;
+}
+
+LastName: WOString {
+    value = personItem.lastName;
+}
+
+EditForm: WOForm {
+    multipleSubmit = true;
+    enctype = "multipart/form-data";
+}
+
+FirstNameField: WOTextField {
+    value = aPerson.firstName;
+}
+
+LastNameField: WOTextField {
+    value = aPerson.lastName;
+}
+
+PhotoUpload: ERAttachmentUpload {
+    configurationName = "Person.photo";
+    editingContext = ec;
+    attachment = aPerson.photo;
+}
+
+SaveButton: WOSubmitButton {
+    action = saveChanges;
+}

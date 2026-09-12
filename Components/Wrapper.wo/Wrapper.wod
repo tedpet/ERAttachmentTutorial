@@ -1,0 +1,6 @@
+ComponentContent: WOComponentContent {
+}
+
+StyleSheet: ERXStyleSheet {
+    filename = "Wrapper.css";
+}

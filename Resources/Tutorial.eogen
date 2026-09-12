@@ -1,0 +1,11 @@
+ -destination Sources \
+ -extension java \
+ -java \
+ -javaTemplate _TPEntity.java \
+ -model Resources/Tutorial.eomodeld \
+ -packagedirs \
+ -subclassDestination Sources \
+ -subclassJavaTemplate TPEntity.java \
+ -templatedir EOGenTemp \
+ -verbose \
+ -loadModelGroup

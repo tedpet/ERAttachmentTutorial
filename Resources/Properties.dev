@@ -1,0 +1,18 @@
+#
+# ERAttachmentTutorial dev properties
+#
+
+# localhost is the database and the wo server here at home
+#
+#    192.168.1.52
+# this is the address of the database from inside home running ubuntu in Hyper-v
+
+# Connection Dictionary
+ dbConnectURLGLOBAL=jdbc:postgresql://localhost/attach?capitalizeTypenames=true&zeroDateTimeBehavior=convertToNull
+ dbConnectUserGLOBAL=wouser
+ dbConnectPasswordGLOBAL=3368
+ dbConnectPluginGLOBAL=PostgresqlPlugIn
+ dbConnectDriverGLOBAL=org.postgresql.Driver
+ dbEOPrototypesEntityGLOBAL=EOJDBCPostgresqlPrototypes
+ 
+

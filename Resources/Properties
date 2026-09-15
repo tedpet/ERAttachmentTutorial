@@ -2,6 +2,10 @@
 # ERAttachmentTutorial main deploy properties
 #
 
+#
+#This forces pdfs to download instead of creating a new window.
+#
+er.attachment.proxyAsAttachment=true
 
 
 # OGNL

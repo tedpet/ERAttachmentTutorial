@@ -37,10 +37,10 @@
         <true/>
         <key>NSJavaPath</key>
         <array>
-                <string>ERAttachmentTutorial-0.0.1-SNAPSHOT.jar</string>
+                <string>ERAttachmentTutorial_W8-0.0.1-SNAPSHOT.jar</string>
         </array>
         <key>NSJavaPathClient</key>
-        <string>ERAttachmentTutorial-0.0.1-SNAPSHOT.jar</string>
+        <string>ERAttachmentTutorial_W8-0.0.1-SNAPSHOT.jar</string>
         <key>NSJavaRoot</key>
         <string>Contents/Resources/Java</string>
         <key>NSPrincipalClass</key>

@@ -1,4 +1,4 @@
-module your.app.ERAttachmentTutorial_W8 {
+module your.app.ERAttachmentTutorial {
 	exports your.app.components;
 	exports your.app;
 	exports your.app.model.migrations;

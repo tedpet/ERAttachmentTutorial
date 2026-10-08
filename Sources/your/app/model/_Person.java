@@ -21,13 +21,13 @@ public abstract class _Person extends  ERXGenericRecord {
   public static final ERXKey<String> FIRST_NAME = new ERXKey<String>("firstName");
   public static final ERXKey<String> LAST_NAME = new ERXKey<String>("lastName");
   // Relationship Keys
-  public static final ERXKey<er.attachment.model.ERAttachment> PHOTO = new ERXKey<er.attachment.model.ERAttachment>("photo");
+  public static final ERXKey<er.attachment.model.ERAttachment> THEBIGPHOTO = new ERXKey<er.attachment.model.ERAttachment>("thebigphoto");
 
   // Attributes
   public static final String FIRST_NAME_KEY = FIRST_NAME.key();
   public static final String LAST_NAME_KEY = LAST_NAME.key();
   // Relationships
-  public static final String PHOTO_KEY = PHOTO.key();
+  public static final String THEBIGPHOTO_KEY = THEBIGPHOTO.key();
 
 	private static final Logger LOG = LoggerFactory.getLogger(_Person.class);
 	
@@ -57,28 +57,28 @@ public abstract class _Person extends  ERXGenericRecord {
 	takeStoredValueForKey(value, _Person.LAST_NAME_KEY);
   }
 
-  public er.attachment.model.ERAttachment photo() {
-    return (er.attachment.model.ERAttachment)storedValueForKey(_Person.PHOTO_KEY);
+  public er.attachment.model.ERAttachment thebigphoto() {
+    return (er.attachment.model.ERAttachment)storedValueForKey(_Person.THEBIGPHOTO_KEY);
   }
   
-  public void setPhoto(er.attachment.model.ERAttachment value) {
-    takeStoredValueForKey(value, _Person.PHOTO_KEY);
+  public void setThebigphoto(er.attachment.model.ERAttachment value) {
+    takeStoredValueForKey(value, _Person.THEBIGPHOTO_KEY);
   }
 
-  public void setPhotoRelationship(er.attachment.model.ERAttachment value) {
+  public void setThebigphotoRelationship(er.attachment.model.ERAttachment value) {
 
-	  _Person.LOG.debug("updating photo from {} to {}", photo(), value);
+	  _Person.LOG.debug("updating thebigphoto from {} to {}", thebigphoto(), value);
    
     if (er.extensions.eof.ERXGenericRecord.InverseRelationshipUpdater.updateInverseRelationships()) {
-    	setPhoto(value);
+    	setThebigphoto(value);
     }
     else if (value == null) {
-    	er.attachment.model.ERAttachment oldValue = photo();
+    	er.attachment.model.ERAttachment oldValue = thebigphoto();
     	if (oldValue != null) {
-    		removeObjectFromBothSidesOfRelationshipWithKey(oldValue, _Person.PHOTO_KEY);
+    		removeObjectFromBothSidesOfRelationshipWithKey(oldValue, _Person.THEBIGPHOTO_KEY);
       }
     } else {
-    	addObjectToBothSidesOfRelationshipWithKey(value, _Person.PHOTO_KEY);
+    	addObjectToBothSidesOfRelationshipWithKey(value, _Person.THEBIGPHOTO_KEY);
     }
   }
   

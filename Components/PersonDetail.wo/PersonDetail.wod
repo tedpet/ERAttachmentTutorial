@@ -11,7 +11,7 @@ LastName: WOString {
 
 PhotoViewer: ERAttachmentViewer {
     configurationName = "Person.photo";
-    attachment = aPerson.photo;
+    attachment = aPerson.thebigphoto;
 }
 
 ReturnLink: WOHyperlink {

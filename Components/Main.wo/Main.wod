@@ -15,7 +15,7 @@ FirstName: WOString {
 }
 PhotoViewer: ERAttachmentViewer {
     configurationName = "Person.photo";
-    attachment = personItem.photo;
+    attachment = personItem.thebigphoto;
 }
 
 LastName: WOString {
@@ -38,7 +38,7 @@ LastNameField: WOTextField {
 PhotoUpload: ERAttachmentUpload {
     configurationName = "Person.photo";
     editingContext = ec;
-    attachment = aPerson.photo;
+    attachment = aPerson.thebigphoto;
 }
 
 SaveButton: WOSubmitButton {

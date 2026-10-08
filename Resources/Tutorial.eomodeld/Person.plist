@@ -22,7 +22,7 @@
     ); 
     attributesUsedForLocking = (erAttachmentID, firstName, id, lastName); 
     className = "your.app.model.Person"; 
-    classProperties = (firstName, lastName, photo); 
+    classProperties = (firstName, lastName, thebigphoto); 
     externalName = Person; 
     fetchSpecificationDictionary = {}; 
     name = Person; 
@@ -33,7 +33,7 @@
             isToMany = N; 
             joinSemantic = EOInnerJoin; 
             joins = ({destinationAttribute = id; sourceAttribute = erAttachmentID; }); 
-            name = photo; 
+            name = thebigphoto; 
         }
     ); 
 }

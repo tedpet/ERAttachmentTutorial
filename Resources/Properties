@@ -29,11 +29,13 @@ er.migration.modelNames=ERAttachment,Tutorial
 Tutorial.MigrationClassPrefix=your.app.model.migrations.Tutorial
 
 
-er.attachment.Person.photo.tempFolder = /tmp
-er.attachment.Person.photo.maxSize = 2097152
-er.attachment.Person.photo.storageType = file
-er.attachment.Person.photo.file.overwrite = false
-er.attachment.Person.photo.file.filesystemPath = /Users/asacksadmin/Developer/
+er.attachment.Person.thebigphoto.tempFolder = /tmp
+er.attachment.Person.thebigphoto.maxSize = 2097152
+er.attachment.Person.thebigphoto.storageType = file
+er.attachment.Person.thebigphoto.file.overwrite = false
+#er.attachment.Person.thebigphoto.file.filesystemPath = /Users/asacksadmin/Developer/
+
+er.attachment.Person.thebigphoto.file.filesystemPath = @@user.home@@/attachmentTutorial/
 
 # Misc Components
 #er.extensions.ERXWOForm.multipleSubmitDefault=true
